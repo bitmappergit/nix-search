@@ -1,0 +1,29 @@
+name: nix-search
+version: 0.0.1
+maintainer: Bram Wyllie <bitmapper85@gmail.com>
+
+dependencies:
+  - base >= 4.9 && < 5
+  - text
+  - aeson
+  - regex
+  - regex-base
+  - regex-tdfa
+  - shelly
+  - containers
+  - bytestring
+
+language: GHC2021
+
+default-extensions:
+  - DeriveAnyClass
+  - OverloadedStrings
+  - OverloadedRecordDot
+  - NoFieldSelectors
+  - DuplicateRecordFields
+  - BlockArguments
+
+executable:
+  main: Main.hs
+  source-dirs: app
+

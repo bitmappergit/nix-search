@@ -1,0 +1,35 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           nix-search
+version:        0.0.1
+maintainer:     Bram Wyllie <bitmapper85@gmail.com>
+build-type:     Simple
+
+executable nix-search
+  main-is: Main.hs
+  other-modules:
+      Paths_nix_search
+  hs-source-dirs:
+      app
+  default-extensions:
+      DeriveAnyClass
+      OverloadedStrings
+      OverloadedRecordDot
+      NoFieldSelectors
+      DuplicateRecordFields
+      BlockArguments
+  build-depends:
+      aeson
+    , base >=4.9 && <5
+    , bytestring
+    , containers
+    , regex
+    , regex-base
+    , regex-tdfa
+    , shelly
+    , text
+  default-language: GHC2021
