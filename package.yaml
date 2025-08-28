@@ -1,6 +1,5 @@
 name: nix-search
 version: 0.0.1
-maintainer: Bram Wyllie <bitmapper85@gmail.com>
 
 dependencies:
   - base >= 4.9 && < 5
